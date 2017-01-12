@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import Home from './components/home/Home.jsx';
+import Header from './components/header/Header.jsx';
 
 class App extends React.Component {
 
     render() {
         return (
             <div>
-              
+                <Header/>
             </div>
         )
 
