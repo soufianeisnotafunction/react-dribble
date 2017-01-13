@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+
+#wrapper{
+  height:38px;
+  width: 100vw;
+  padding: 30px;
+  background-color: #444444;
+  font-family: Roboto;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 17px;
+}
+
+#working {
+  color: #ffffff;
+  margin-right: 5px;
+}
+
+#designer{
+  color: #999999;
+  margin-right: 15px;
+}
+
+// Buttons
+.btn{
+  height:17px;
+  border-radius: 4px;
+  padding: 10px 15px 11px;
+  font-size: 13px;
+  text-decoration: none;
+
+}
+
+.btn:visited{
+  color: #ffffff;
+}
+#learn{
+  width : 66px;
+  background-color: #999;
+  margin-right: 4px;
+}
+
+#learn:hover{
+  background-color: #888;
+}
+
+#signup{
+  width : 44px;
+  background-color: #E56193;
+}
+
+#signup:hover{
+  background-color: #df3e7b;
+}
