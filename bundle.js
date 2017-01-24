@@ -458,6 +458,10 @@
 
 	var _Header2 = _interopRequireDefault(_Header);
 
+	var _Layout = __webpack_require__(188);
+
+	var _Layout2 = _interopRequireDefault(_Layout);
+
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -481,7 +485,8 @@
 	            return _react2.default.createElement(
 	                'div',
 	                null,
-	                _react2.default.createElement(_Header2.default, null)
+	                _react2.default.createElement(_Header2.default, null),
+	                _react2.default.createElement(_Layout2.default, null)
 	            );
 	        }
 	    }]);
@@ -22071,7 +22076,121 @@
 
 
 	// module
-	exports.push([module.id, ".header {\n  height: 56px;\n  background-color: #444; }\n\nsvg path {\n  fill: #FFF; }\n\nsvg:hover path {\n  fill: #ADADAD; }\n\na {\n  font-family: 'Helvetica Neue', sans-serif;\n  line-height: 56px;\n  height: 56px;\n  font-size: 14px;\n  padding: 0 10px;\n  text-decoration: none;\n  color: #DDD; }\n\na:hover {\n  color: #FFF; }\n\ninput {\n  border: none;\n  border-radius: 4px;\n  width: 190px;\n  padding: 5px 5px 5px 25px;\n  font-family: 'Helvetica Neue', sans-serif;\n  line-height: 17px;\n  font-size: 14px;\n  background-color: #FFF;\n  color: #BBB;\n  font-weight: 500; }\n\n.white {\n  color: #FFF; }\n", ""]);
+	exports.push([module.id, ".header {\n  height: 56px;\n  background-color: #323232; }\n\nsvg path {\n  fill: #FFF;\n  transition: all 0.5s; }\n\nsvg:hover path {\n  fill: #ADADAD; }\n\na {\n  font-family: 'Helvetica Neue', sans-serif;\n  line-height: 56px;\n  height: 56px;\n  font-size: 14px;\n  padding: 0 10px;\n  text-decoration: none;\n  color: #DDD; }\n\na:hover {\n  color: #FFF; }\n\ninput {\n  border: none;\n  border-radius: 4px;\n  width: 190px;\n  padding: 5px 5px 5px 25px;\n  font-family: 'Helvetica Neue', sans-serif;\n  line-height: 17px;\n  font-size: 14px;\n  background-color: #FFF;\n  color: #BBB;\n  font-weight: 500; }\n\n.white {\n  color: #FFF; }\n", ""]);
+
+	// exports
+
+
+/***/ },
+/* 188 */
+/***/ function(module, exports, __webpack_require__) {
+
+	"use strict";
+
+	Object.defineProperty(exports, "__esModule", {
+	  value: true
+	});
+
+	var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
+
+	var _react = __webpack_require__(8);
+
+	var _react2 = _interopRequireDefault(_react);
+
+	__webpack_require__(189);
+
+	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+	function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+	function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+	var Layout = function (_React$Component) {
+	  _inherits(Layout, _React$Component);
+
+	  function Layout() {
+	    _classCallCheck(this, Layout);
+
+	    return _possibleConstructorReturn(this, (Layout.__proto__ || Object.getPrototypeOf(Layout)).apply(this, arguments));
+	  }
+
+	  _createClass(Layout, [{
+	    key: "render",
+	    value: function render() {
+	      return _react2.default.createElement(
+	        "div",
+	        { id: "wrapper" },
+	        _react2.default.createElement(
+	          "div",
+	          { className: "container row center" },
+	          _react2.default.createElement(
+	            "span",
+	            { id: "working" },
+	            "What are you working on?"
+	          ),
+	          _react2.default.createElement(
+	            "span",
+	            { id: "designer" },
+	            "Dribbble is show and tell for designers."
+	          ),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://dribbble.com/about", className: "btn text-center", id: "learn" },
+	            "Learn more"
+	          ),
+	          _react2.default.createElement(
+	            "a",
+	            { href: "https://dribbble.com/signup", className: "btn text-center", id: "signup" },
+	            "Sign up"
+	          )
+	        )
+	      );
+	    }
+	  }]);
+
+	  return Layout;
+	}(_react2.default.Component);
+
+	exports.default = Layout;
+
+/***/ },
+/* 189 */
+/***/ function(module, exports, __webpack_require__) {
+
+	// style-loader: Adds some css to the DOM by adding a <style> tag
+
+	// load the styles
+	var content = __webpack_require__(190);
+	if(typeof content === 'string') content = [[module.id, content, '']];
+	// add the styles to the DOM
+	var update = __webpack_require__(4)(content, {});
+	if(content.locals) module.exports = content.locals;
+	// Hot Module Replacement
+	if(false) {
+		// When the styles change, update the <style> tags
+		if(!content.locals) {
+			module.hot.accept("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./layout.scss", function() {
+				var newContent = require("!!./../../../node_modules/css-loader/index.js!./../../../node_modules/sass-loader/index.js!./layout.scss");
+				if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
+				update(newContent);
+			});
+		}
+		// When the module is disposed, remove the <style> tags
+		module.hot.dispose(function() { update(); });
+	}
+
+/***/ },
+/* 190 */
+/***/ function(module, exports, __webpack_require__) {
+
+	exports = module.exports = __webpack_require__(3)();
+	// imports
+	exports.push([module.id, "@import url(https://fonts.googleapis.com/css?family=Roboto);", ""]);
+
+	// module
+	exports.push([module.id, "#wrapper {\n  height: 38px;\n  width: 100vw;\n  padding: 30px;\n  background-color: #444444;\n  font-family: 'Helvetica Neue', sans-serif;\n  font-size: 16px;\n  font-weight: 500;\n  line-height: 17px; }\n\n#working {\n  color: #ffffff;\n  margin-right: 5px; }\n\n#designer {\n  color: #999999;\n  margin-right: 15px; }\n\n.btn {\n  height: 17px;\n  border-radius: 4px;\n  padding: 10px 15px 11px;\n  font-size: 13px;\n  text-decoration: none; }\n\n.btn:visited {\n  color: #ffffff; }\n\n#learn {\n  width: 66px;\n  background-color: #999;\n  margin-right: 4px; }\n\n#learn:hover {\n  background-color: #888; }\n\n#signup {\n  width: 44px;\n  background-color: #E56193; }\n\n#signup:hover {\n  background-color: #df3e7b; }\n", ""]);
 
 	// exports
 
